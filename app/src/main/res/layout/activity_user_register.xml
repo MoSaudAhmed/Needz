@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.create_profile.UserRegisterMobile">
+
+   <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:foreground="@drawable/background_black_gradation"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txt_haeding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Sign up"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/proximanovaregular"
+                android:padding="16dp"
+                android:textSize="30sp"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@mipmap/bg_6" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="@dimen/padding_4sp"
+                app:cardUseCompatPadding="true"
+                android:layout_below="@+id/txt_haeding">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    android:paddingRight="16dp"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="@dimen/padding_8dp"
+                    android:paddingBottom="@dimen/padding_8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Hello"
+                        android:textSize="24sp"
+                        android:padding="@dimen/padding_4sp"
+                        android:fontFamily="@font/proximanovaregular"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Create an account to continue"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="16dp"
+                        android:padding="@dimen/padding_4sp"
+                        android:fontFamily="@font/proximanovaregular"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/usernameWrapper"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp">
+
+                        <EditText
+                            android:id="@+id/et_contact"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:padding="16dp"
+                            android:hint="Enter Mobile Number"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp">
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/et_otp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="number"
+                                android:maxLength="6"
+                                android:padding="16dp"
+                                android:hint="SMS Code"/>
+
+
+
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <TextView
+                            android:id="@+id/txt_send_otp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/round_fill"
+                            android:text="Send Code"
+                            android:textSize="12sp"
+                            android:paddingBottom="@dimen/padding_4sp"
+                            android:paddingTop="@dimen/padding_4sp"
+                            android:paddingLeft="@dimen/padding_8dp"
+                            android:paddingRight="@dimen/padding_8dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/white"
+                            />
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/btn_continue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Continue"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:background="@drawable/round_fill"/>
+
+                    <TextView
+                        android:id="@+id/txt_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Try another way"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="@dimen/padding_8dp"
+                        android:padding="@dimen/padding_4sp"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/proximanovaregular"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.need.needz.activities.create_profile.UpdateProfileActivity">
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_8dp">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/padding_8dp"
+            android:src="@drawable/ic_arrow_back"
+            android:tint="@color/black" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:fontFamily="@font/proximanovaregular"
+            android:padding="@dimen/padding_8dp"
+            android:text="Personal Information"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/txt_btn"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingTop="@dimen/padding_8dp"
+            android:paddingBottom="@dimen/padding_8dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_8dp"
+                android:fontFamily="@font/proximanovaregular"
+                android:padding="@dimen/padding_4sp"
+                android:text="Basis of Employment"
+                android:textColor="@color/black" />
+
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:id="@+id/spinner_position"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_8dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:tint="@color/colorPrimaryDark"
+                    android:padding="@dimen/padding_4sp"
+                    android:src="@drawable/ic_person"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/proximanovaregular"
+                    android:padding="@dimen/padding_4sp"
+                    android:layout_gravity="center_vertical"
+                    android:text="Given Name (Including Middle)"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+
+
+            <EditText
+                android:id="@+id/et_surname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/green_border"
+                android:fontFamily="@font/proximanovaregular"
+                android:hint="Given Name (Including Middle)"
+                android:singleLine="true"
+                android:paddingLeft="16dp"
+                android:paddingTop="@dimen/padding_8dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="@dimen/padding_8dp"
+                android:textColor="@color/black" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_8dp"
+                android:fontFamily="@font/proximanovaregular"
+                android:padding="@dimen/padding_4sp"
+                android:text="Date of Birth"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/et_dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/green_border"
+                android:fontFamily="@font/proximanovaregular"
+                android:hint="Date of Birth"
+                android:singleLine="true"
+                android:paddingLeft="16dp"
+                android:focusableInTouchMode="false"
+                android:paddingTop="@dimen/padding_8dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="@dimen/padding_8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_8dp"
+                android:fontFamily="@font/proximanovaregular"
+                android:padding="@dimen/padding_4sp"
+                android:text="Citizenship Status / Eligibility to Work"
+                android:textColor="@color/black" />
+
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:id="@+id/spinner_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_8dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:tint="@color/colorPrimaryDark"
+                    android:padding="@dimen/padding_4sp"
+                    android:src="@drawable/ic_home"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/proximanovaregular"
+                    android:padding="@dimen/padding_4sp"
+                    android:layout_gravity="center_vertical"
+                    android:text="Postal Address"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/green_border"
+                android:fontFamily="@font/proximanovaregular"
+                android:hint="Enter Postal Address"
+                android:paddingLeft="16dp"
+                android:paddingTop="@dimen/padding_8dp"
+                android:singleLine="true"
+                android:paddingRight="16dp"
+                android:paddingBottom="@dimen/padding_8dp"
+                android:textColor="@color/black" />
+            <EditText
+                android:id="@+id/et_subrub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/green_border"
+                android:fontFamily="@font/proximanovaregular"
+                android:hint="Enter Subrub"
+                android:paddingLeft="16dp"
+                android:singleLine="true"
+                android:layout_marginTop="@dimen/padding_8dp"
+                android:paddingTop="@dimen/padding_8dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="@dimen/padding_8dp"
+                android:textColor="@color/black" />
+            <EditText
+                android:id="@+id/et_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_8dp"
+                android:background="@drawable/green_border"
+                android:singleLine="true"
+                android:fontFamily="@font/proximanovaregular"
+                android:hint="Enter State"
+                android:paddingLeft="16dp"
+                android:paddingTop="@dimen/padding_8dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="@dimen/padding_8dp"
+                android:textColor="@color/black" />
+            <EditText
+                android:id="@+id/et_postcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/green_border"
+                android:layout_marginTop="@dimen/padding_8dp"
+                android:fontFamily="@font/proximanovaregular"
+                android:singleLine="true"
+                android:hint="Enter Postcode"
+                android:paddingLeft="16dp"
+                android:paddingTop="@dimen/padding_8dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="@dimen/padding_8dp"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_8dp"
+                android:fontFamily="@font/proximanovaregular"
+                android:padding="@dimen/padding_4sp"
+                android:text="Email ID"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/green_border"
+                android:fontFamily="@font/proximanovaregular"
+                android:singleLine="true"
+                android:hint="Email ID"
+                android:paddingLeft="16dp"
+                android:paddingTop="@dimen/padding_8dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="@dimen/padding_8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_8dp"
+                android:fontFamily="@font/proximanovaregular"
+                android:padding="@dimen/padding_4sp"
+                android:text="Do you possess a current motor vehicle Driver’s Licence? "
+                android:textColor="@color/black" />
+
+            <RadioGroup
+                android:id="@+id/conviction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_8dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="No"/>
+
+                <RadioButton
+                    android:id="@+id/radio1_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="Yes"
+                    android:checked="true"
+                    android:layout_marginStart="16dp" />
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/et_licence_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/green_border"
+                android:fontFamily="@font/proximanovaregular"
+                android:hint="Licence No"
+                android:paddingLeft="16dp"
+                android:singleLine="true"
+                android:layout_marginTop="@dimen/padding_8dp"
+                android:paddingTop="@dimen/padding_8dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="@dimen/padding_8dp"
+                android:textColor="@color/black" />
+            <EditText
+                android:id="@+id/et_class"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:background="@drawable/green_border"
+                android:fontFamily="@font/proximanovaregular"
+                android:hint="Class(es)"
+                android:layout_marginTop="@dimen/padding_8dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="@dimen/padding_8dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="@dimen/padding_8dp"
+                android:textColor="@color/black" />
+            <EditText
+                android:id="@+id/et_state_of_issue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/green_border"
+                android:fontFamily="@font/proximanovaregular"
+                android:hint="State of issue"
+                android:layout_marginTop="@dimen/padding_8dp"
+                android:paddingLeft="16dp"
+                android:singleLine="true"
+                android:paddingTop="@dimen/padding_8dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="@dimen/padding_8dp"
+                android:textColor="@color/black" />
+            <EditText
+                android:id="@+id/et_expire_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/green_border"
+                android:fontFamily="@font/proximanovaregular"
+                android:hint="Expiry Date-dd/MM/yyyy"
+                android:singleLine="true"
+                android:layout_marginTop="@dimen/padding_8dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="@dimen/padding_8dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="@dimen/padding_8dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/txt_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:gravity="center_horizontal"
+        android:text="Save"
+        android:layout_alignParentBottom="true"
+        android:textSize="18sp"
+        android:fontFamily="@font/proximanovaregular"
+        android:background="@color/colorPrimaryDark"
+        android:layout_gravity="bottom"
+        android:padding="16dp"/>
+</RelativeLayout>

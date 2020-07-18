@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical"
+    tools:context=".activities.myrides.MyRidesActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingBottom="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp">
+            <!--Option Bar-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/circularbordersolid"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/personalinfobtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/proximanovaregular"
+                    android:gravity="center"
+                    android:padding="13dp"
+                    android:text="FIND RIDE"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:id="@+id/reviewbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/proximanovaregular"
+                    android:gravity="center"
+                    android:padding="13dp"
+                    android:text="OFFER RIDE"
+                    android:textAllCaps="true"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!--Bootom Cards with sections-->
+            <LinearLayout
+                android:id="@+id/personalinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--Contact Details-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/circularbordersolid"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingRight="8dp">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/circular_gray_bordersolid"
+                                android:padding="10dp"
+                                android:src="@drawable/ic_baseline_call_24" />
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:textSize="15sp"
+                                android:hint="Source"
+                                android:singleLine="true"
+                                android:padding="10dp"
+                                android:background="@drawable/et_style"
+                                android:textCursorDrawable="@null"
+                                android:textColorHint="@color/gray"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/proximanovaregular" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical"
+                            android:paddingRight="8dp">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/circular_gray_bordersolid"
+                                android:padding="10dp"
+                                android:src="@drawable/ic_baseline_call_24" />
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:hint="Destination"
+                                android:padding="10dp"
+                                android:singleLine="true"
+                                android:background="@drawable/et_style"
+                                android:textColorHint="@color/gray"
+                                android:textColor="@color/black"
+                                android:textCursorDrawable="@null"
+                                android:textSize="15sp"
+                                android:fontFamily="@font/proximanovaregular" />
+                        </LinearLayout>
+                    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="100"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="50"
+        android:gravity="center_vertical"
+        android:paddingRight="8dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circular_gray_bordersolid"
+            android:padding="10dp"
+            android:src="@drawable/ic_baseline_call_24" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:hint="Time"
+            android:singleLine="true"
+            android:padding="10dp"
+            android:background="@drawable/et_style"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@null"
+            android:textSize="15sp"
+            android:fontFamily="@font/proximanovaregular" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:layout_weight="50"
+        android:paddingRight="8dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circular_gray_bordersolid"
+            android:padding="10dp"
+            android:src="@drawable/ic_baseline_call_24" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:hint="Seats"
+            android:padding="10dp"
+            android:layout_weight="50"
+            android:singleLine="true"
+            android:background="@drawable/et_style"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@null"
+            android:textSize="15sp"
+            android:fontFamily="@font/proximanovaregular" />
+    </LinearLayout>
+</LinearLayout>
+
+                        <Button
+                            android:id="@+id/find_ride_search_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:layout_marginTop="26dp"
+                            android:background="@drawable/fill_green_solidd"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/white"
+                            android:text="Search"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--Review Bottom Cards-->
+            <LinearLayout
+                android:id="@+id/review"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/circularbordersolid"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingRight="8dp">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/circular_gray_bordersolid"
+                                android:padding="10dp"
+                                android:src="@drawable/ic_baseline_call_24" />
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:textSize="15sp"
+                                android:hint="Source"
+                                android:singleLine="true"
+                                android:padding="10dp"
+                                android:background="@drawable/et_style"
+                                android:textCursorDrawable="@null"
+                                android:textColorHint="@color/gray"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/proximanovaregular" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical"
+                            android:paddingRight="8dp">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/circular_gray_bordersolid"
+                                android:padding="10dp"
+                                android:src="@drawable/ic_baseline_call_24" />
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:hint="Destination"
+                                android:textColorHint="@color/gray"
+                                android:textColor="@color/black"
+                                android:singleLine="true"
+                                android:padding="10dp"
+                                android:background="@drawable/et_style"
+                                android:textCursorDrawable="@null"
+                                android:textSize="15sp"
+                                android:fontFamily="@font/proximanovaregular" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="100"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="50"
+                                android:gravity="center_vertical"
+                                android:paddingRight="8dp">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/circular_gray_bordersolid"
+                                    android:padding="10dp"
+                                    android:src="@drawable/ic_baseline_call_24" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:hint="Time"
+                                    android:padding="10dp"
+                                    android:singleLine="true"
+                                    android:background="@drawable/et_style"
+                                    android:textColorHint="@color/gray"
+                                    android:textColor="@color/black"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="15sp"
+                                    android:fontFamily="@font/proximanovaregular" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center_vertical"
+                                android:layout_weight="50"
+                                android:paddingRight="8dp">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/circular_gray_bordersolid"
+                                    android:padding="10dp"
+                                    android:src="@drawable/ic_baseline_call_24" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:hint="Seats"
+                                    android:padding="10dp"
+                                    android:layout_weight="50"
+                                    android:singleLine="true"
+                                    android:background="@drawable/et_style"
+                                    android:textColorHint="@color/gray"
+                                    android:textColor="@color/black"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="15sp"
+                                    android:fontFamily="@font/proximanovaregular" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/offer_ride_search_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:layout_marginTop="26dp"
+                            android:background="@drawable/fill_green_solidd"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/white"
+                            android:text="Search"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme.Splash"
+    tools:context=".activities.create_profile.SplashActivity">
+
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:padding="8dp"
+        android:src="@mipmap/logo" />
+
+    <com.agrawalsuneet.dotsloader.loaders.TashieLoader
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        app:tashieloader_animDelay="200"
+        app:tashieloader_animDur="200"
+        app:tashieloader_dotsColor="@color/colorPrimary_man"
+        app:tashieloader_dotsDist="4dp"
+        app:tashieloader_dotsRadius="3sp"
+        app:tashieloader_interpolator="@android:anim/accelerate_interpolator"
+        app:tashieloader_noOfDots="4" />
+
+</RelativeLayout>

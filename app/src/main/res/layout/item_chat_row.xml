@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rl_root">
+    <RelativeLayout
+        android:id="@+id/rl_photo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/space10"
+        android:layout_marginRight="@dimen/space10">
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/iv_user_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/img1"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:paddingStart="@dimen/space10"
+        android:layout_toRightOf="@+id/rl_photo"
+        android:background="@drawable/bg_bottom_grey"
+        android:gravity="center_vertical"
+        android:paddingEnd="@dimen/space10"
+        android:layout_toEndOf="@+id/rl_photo">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Siva Sankar"
+                android:textColor="@color/colorPrimary_man"
+                android:textSize="17sp"/>
+            <View
+                android:id="@+id/online_indicator"
+                android:layout_alignTop="@id/tv_user_name"
+                android:layout_marginTop="5dp"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/bg_online"
+                android:layout_toEndOf="@id/tv_user_name"
+                android:layout_marginStart="@dimen/space5" />
+            <TextView
+                android:id="@+id/tv_last_chat"
+                android:layout_below="@id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:singleLine="true"
+                android:fontFamily="@font/proximanovaregular"
+                android:text="Hi, Siva Looks great"
+                android:layout_marginTop="3dp" />
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/online_indicator"
+                android:layout_alignParentEnd="true"
+                android:textSize="12sp"
+                android:text="12:00 pm" />
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="-2dp"
+                android:gravity="center"
+                android:layout_below="@+id/tv_time"
+                android:text="3"
+                android:textSize="10sp"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_unread"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

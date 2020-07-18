@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:padding="@dimen/space10"
+    android:layout_marginEnd="@dimen/spaceLR">
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/person"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/img1"
+        android:layout_marginEnd="@dimen/space10"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/person"
+        android:background="@drawable/bg_chat_you">
+        <TextView
+            android:id="@+id/tv_chat_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space10"
+            android:text="Hi, joe how are you, do you like to join our party in next week because you don't like party?"
+            />
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/space5"
+            android:text="5:04pm"
+            android:paddingEnd="@dimen/padding_8dp"
+            android:layout_below="@+id/tv_chat_text"
+            android:layout_alignParentEnd="true"
+            android:textSize="11sp"
+            android:paddingBottom="@dimen/padding_8dp"
+            android:fontFamily="@font/proximanovaregular"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

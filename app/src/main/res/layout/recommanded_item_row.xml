@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/padding_8dp"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="@dimen/padding_4sp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+        <ImageView
+            android:id="@+id/img_user"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/img5"
+            android:scaleType="centerCrop"
+            android:foreground="@drawable/background_black_gradation" />
+
+        <TextView
+            android:id="@+id/txt_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:paddingTop="@dimen/padding_4sp"
+            android:paddingLeft="@dimen/padding_8dp"
+            android:paddingRight="@dimen/padding_8dp"
+            android:textSize="12sp"
+            android:fontFamily="@font/proximanovaregular"
+            android:layout_above="@+id/txt_name"
+            android:text="Madhapur- BanjaraHills"/>
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/white"
+            android:fontFamily="@font/proximanovaregular"
+            android:paddingBottom="@dimen/padding_8dp"
+            android:paddingLeft="@dimen/padding_8dp"
+            android:paddingRight="@dimen/padding_8dp"
+            android:textStyle="bold"
+            android:text="Rs 160"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

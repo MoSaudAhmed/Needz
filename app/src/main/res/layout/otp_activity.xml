@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter OTP"
+        android:textSize="20dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/login_border"
+        android:layout_below="@+id/imgLogo">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textCursorDrawable="@null"
+            android:layout_marginEnd="16dp"
+            android:maxLength="4"
+            android:hint="xxxx"
+            android:backgroundTint="@color/white"
+            android:textColorHint="@color/gray"
+            android:fontFamily="@font/proximanovaregular"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:weightSum="100"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:textSize="12dp"
+            android:padding="10dp"
+            android:text="Edit Phone Number"
+            android:textColor="@color/blue"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:textSize="12dp"
+            android:padding="10dp"
+            android:gravity="right"
+            android:text="Resend OTP"
+            android:textColor="@color/red"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/otp_submit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginStart="16dp"
+        android:textSize="18sp"
+        android:background="@drawable/fill_green_good_edge"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/proximanovaregular"
+        android:textColor="@color/white"
+        android:text="Submit"/>
+</LinearLayout>

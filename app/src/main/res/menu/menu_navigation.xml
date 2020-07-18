@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.techastrum.grocery.activities.MainActivity">
+
+    <item
+        android:id="@+id/orders"
+        android:enabled="true"
+        android:icon="@mipmap/account1"
+        android:title="Orders" />
+
+    <item
+        android:id="@+id/payments"
+        android:enabled="true"
+        android:icon="@mipmap/account1"
+        android:title="Payments" />
+    <item
+        android:id="@+id/chat"
+        android:enabled="true"
+        android:icon="@mipmap/chat"
+        android:title="Chats" />
+    <item
+        android:id="@+id/profile"
+        android:enabled="true"
+        android:icon="@mipmap/account"
+        android:title="Profile" />
+</menu>
