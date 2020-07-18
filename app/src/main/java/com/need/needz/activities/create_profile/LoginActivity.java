@@ -49,7 +49,7 @@ public class LoginActivity extends AppCompatActivity {
         Utils.onActivityCreateSetTheme(this);
         setContentView(R.layout.activity_login);
 
-        countryCodeSelectorTxt=(TextView) findViewById(R.id.country_code_selector);
+        countryCodeSelectorTxt = (TextView) findViewById(R.id.country_code_selector);
         //settingStatusBarTransparent();
         context = LoginActivity.this;
 
@@ -59,6 +59,7 @@ public class LoginActivity extends AppCompatActivity {
                 openCountry();
             }
         });
+
 
         findViewById(R.id.ll_quick_register).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -89,7 +90,7 @@ public class LoginActivity extends AppCompatActivity {
         findViewById(R.id.forgot_password).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent forgotPasswordIntent = new Intent(LoginActivity.this,ForgotPasswordActivity.class);
+                Intent forgotPasswordIntent = new Intent(LoginActivity.this, ForgotPasswordActivity.class);
                 startActivity(forgotPasswordIntent);
             }
         });
@@ -189,21 +190,22 @@ public class LoginActivity extends AppCompatActivity {
         dialog.show();
     }
 
-    String country_iso_code="IN";
+    String country_iso_code = "IN";
+
     @SuppressLint("WrongConstant")
-    public void openCountry(){
+    public void openCountry() {
         final CountryPicker picker = CountryPicker.newInstance("Select Country");
         picker.setListener(new CountryPickerListener() {
             @Override
             public void onSelectCountry(String name, String code, String dialCode, int flagDrawableResID) {
                 // Implement your code here
-                Toast.makeText(LoginActivity.this, ""+name, Toast.LENGTH_SHORT).show();
+                Toast.makeText(LoginActivity.this, "" + name, Toast.LENGTH_SHORT).show();
                 picker.dismiss();
-                country_iso_code=code;
+                country_iso_code = code;
                 countryCodeSelectorTxt.setText(dialCode);
             }
         });
-        picker.setStyle(R.style.countrypicker_style,R.style.countrypicker_style);
+        picker.setStyle(R.style.countrypicker_style, R.style.countrypicker_style);
         picker.show(getSupportFragmentManager(), "Select Country");
     }
 }
